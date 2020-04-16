@@ -1,4 +1,4 @@
-/*#include "Vector.h"
+#include "Vector.h"
 #include "Matrix.h"
 #include "LinearSolver.h"
 #include <cmath>
@@ -6,6 +6,8 @@
 
 int main()
 {
+	Vector x(2);
+	x.FreeVector();
 	int N = 4;
 	Matrix A(N,N);
 	Vector b(N);
@@ -91,4 +93,4 @@ int main()
 	A.FreeMatrix();
 	b.FreeVector();
 	return 0;
-}*/
+}
